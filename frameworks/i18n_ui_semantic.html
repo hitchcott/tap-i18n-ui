@@ -28,3 +28,15 @@
     {{/if}}
   </span>
 </template>
+
+<template name="i18n_flags_semantic">
+  <span class="tap-i18n-flags">
+    {{#if i18n_enabled}}
+      {{#each sortedFlagTags}}
+        <i class="{{flagTag}} flag"></i>
+      {{/each}}
+    {{else}}
+      <span class="i18n-not-found">No i18n files found</span>
+    {{/if}}
+  </span>
+</template>
