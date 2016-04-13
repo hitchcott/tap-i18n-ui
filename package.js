@@ -1,14 +1,14 @@
 Package.describe({
   name: 'tap:i18n-ui',
   summary: 'User interface for the tap-i18n package',
-  version: '0.7.0',
+  version: '0.8.0',
   git: 'https://github.com/TAPevents/tap-i18n-ui'
 });
 
 Package.onUse(function (api) {
   api.versionsFrom('METEOR@0.9.1');
 
-  api.use("tap:i18n@1.0.3");
+  api.use("tap:i18n@1.8.0");
 
   api.use(['coffeescript','underscore','templating','amplify'], 'client');
 
